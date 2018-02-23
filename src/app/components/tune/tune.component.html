@@ -1,0 +1,19 @@
+<div class="panel">
+  <div class="block-article-container">
+    <a>
+      <div class="block-article-img-container bdaia-img-show">
+        <img class="article-img" (load)="imgLoaded()" [src]="tune.album.cover_medium" alt="" />
+      </div>
+    </a>
+  </div>
+  <div class="block-article-content-wrapper">
+    <header>
+      <div class="block-info-cat">
+        <a class="cat-link cat-3">{{ tune.artist.name }}</a>
+      </div>
+      <div class="entry-title">
+        <h4 class="article-title">{{ tune.artist.name }} - {{tune.title}}</h4>
+      </div>
+    </header>
+  </div>
+</div>

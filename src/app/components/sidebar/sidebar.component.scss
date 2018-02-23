@@ -1,0 +1,87 @@
+.sidebar {
+  text-align: center;
+  margin-top: 3rem;
+  color: white;
+  height: 80vh;
+  padding: 1.5rem 3rem;
+  overflow-y: auto;
+  background-color: #1D2224;
+  border-radius: 3px;
+  box-shadow: 0 .2rem 1rem .2rem rgba(black, .1);
+  &::-webkit-scrollbar {
+    border-radius: 3px;
+    width: 12px;
+    background-color: rgb(66, 65, 65);
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #EEDE4D;
+  }
+  // @include respond(tab-land) {
+  //   max-height: 84rem;
+  // }
+  // @include respond(sidebarflex) {
+  //   max-height: unset;
+  //   padding: 1rem;
+  //   border-radius: 0;
+  // }
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  margin: 2rem;
+  margin-bottom: 1rem;
+  &-box {
+    .img-box {
+      position: relative;
+      width: fit-content;
+      margin: auto; // padding: .22rem;
+      // background-color: #EEDE4D;
+    }
+    img {
+      height: 9.24rem;
+      width: 9.24rem;
+      border: 2px solid rgb(252, 252, 252);
+    }
+    .tune-title {
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 1rem auto;
+      font-weight: 700;
+    }
+  }
+}
+
+hr {
+  background-color: white;
+}
+
+.rank {
+  border-radius: 50%;
+  border: .2rem solid rgb(0, 0, 0);
+  font-size: 2rem;
+  line-height: 3.6rem;
+  position: absolute;
+  left: -1.5rem;
+  top: -1rem;
+  font-family: 'PT Serif', serif, sans-serif, Arial;
+  background-color: #EEDE4D;
+  height: 4rem;
+  text-indent: .1rem;
+  width: 4rem;
+  color: rgb(32, 32, 32);
+  text-align: center;
+}
+
+.trending-heading {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}

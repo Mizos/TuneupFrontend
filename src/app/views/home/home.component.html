@@ -1,0 +1,9 @@
+<div class="wrapper">
+<app-loader *ngIf="loading"></app-loader>
+<div [hidden]="loading" class="animated home fadeInUp">
+  <app-banner></app-banner>
+  <app-feed (feedLoaded)="loaded()"></app-feed>
+  <app-search></app-search>
+</div>
+ 
+</div>

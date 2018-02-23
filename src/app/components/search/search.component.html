@@ -1,0 +1,22 @@
+<div class="search mb-5">
+<div class="text-box">
+  <h1 class="heading-primary">
+    <span class="heading-primary-main">Search for your favorite music</span>
+  </h1>
+
+  <div class="search-form">
+    <input #search class="search-input" type="text" placeholder="Tune">
+    <button (click)="doSearch(search)" class="btn btn--primary btn--inside uppercase">Search</button>
+  </div>
+ 
+</div>
+</div>
+
+<div class="container">
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let tune of searchData">
+      <img [src]="tune.cover" alt="">
+      <a target="_blank">{{tune.title}}</a>
+    </li>
+  </ul>
+</div>
